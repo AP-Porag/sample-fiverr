@@ -27,7 +27,7 @@
                 <div class="d-flex">
                   <h2 class="title-text">Finasteride</h2> <span class="status">active</span>
                 </div>
-                <p class="description">For personalised advice, you are welcome to arrange a video consultation with a trained consultant or to use our live assistance for guidance while browsing online.</p>
+                <p class="description">For personalised advice, you are welcome to arrange a video consultation with a trained consultnt or to use our live assistance for guidance while browsing online.</p>
                 <div class="btn-box">
                   <v-row>
                     <v-col cols="12" sm="12" md="5">

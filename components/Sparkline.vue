@@ -1,13 +1,37 @@
 <template>
-
+  <div class="">
+    <v-sparkline
+      :gradient="['#5EF7B7','#0CBB72']"
+      type="bar"
+      show-labels
+      auto-line-width
+      :value="value"
+    ></v-sparkline>
+  </div>
 </template>
-
 <script>
+const gradients = [
+  ['#222'],
+  ['#42b3f4'],
+  ['red', 'orange', 'yellow'],
+  ['purple', 'violet'],
+  ['#00c6ff', '#F0F', '#FF0'],
+  ['#f72047', '#ffd200', '#1feaea'],
+]
+
 export default {
-  name: "Sparkline"
+  data: () => ({
+    width: 1,
+    radius: 10,
+    padding: 8,
+    lineCap: 'round',
+    gradient: gradients[5],
+    value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0,8,7,6,17,12,9,3],
+    gradientDirection: 'top',
+    gradients,
+    fill: false,
+    type: 'trend',
+    autoLineWidth: false,
+  }),
 }
 </script>
-
-<style scoped>
-
-</style>
